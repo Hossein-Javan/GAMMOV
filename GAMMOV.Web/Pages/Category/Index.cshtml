@@ -1,0 +1,53 @@
+﻿@page
+@model GAMMOV.Web.Pages.Category.IndexModel
+@{
+}
+<h2>Manage Categories</h2>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Category List</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>ParentId</th>
+                        <th>Icon</th>
+                        <th>Slug</th>
+                        <th>MetaTitle</th>
+                        <th>MetaDescription</th>
+                        <th>OgImage</th>
+                        <th>OgUrl</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Row -->
+                    @foreach (var category in Model.Categories)
+                    {
+                        <tr>
+                            <td>@category.Id</td>
+                            <td>@category.Title</td>
+                            <td>@category.ParentId</td>
+                            <td>@category.Icon</td>
+                            <td>@category.Slug</td>
+                            <td>@category.SeoData.MetaTitle</td>
+                            <td>@category.SeoData.MetaDescription</td>
+                            <td>@category.SeoData.OgImg</td>
+                            <td>@category.SeoData.OgUrl</td>
+
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    }
+
+                    <!-- More rows can be added here -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+</div>

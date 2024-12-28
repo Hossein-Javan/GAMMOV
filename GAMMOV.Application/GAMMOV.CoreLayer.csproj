@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GAMMOV.Domain\GAMMOV.DataLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Ads\" />
+    <Folder Include="Services\Comment\" />
+    <Folder Include="Services\User\" />
+    <Folder Include="Services\Tag\" />
+    <Folder Include="Services\SocialMedia\" />
+    <Folder Include="Services\SiteSetting\" />
+    <Folder Include="Services\SeoData\" />
+    <Folder Include="Services\Post\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,75 @@
+﻿@page
+@model GAMMOV.Web.Pages.Category.CreateModel
+@{
+}
+<div class="col-md-4">
+    <h4>Add/Edit Category</h4>
+    <form method="post">
+        <div class="mb-3">
+            <label for="categoryName" class="form-label">نام دسته بندی</label>
+            <input type="text" class="form-control" id="Title" asp-for="Title">
+            <span asp-validation-for="Title"></span>
+        </div>
+        <div class="mb-3">
+            <label for="categorySlug" class="form-label">پیوند اختصاصی</label>
+            <input type="text" class="form-control" id="Slug" asp-for="Slug">
+            <span asp-validation-for="Slug"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Icon" class="form-label">آیکون</label>
+            <input type="text" id="selectedIconInput" name="Icon" asp-for="Icon" class="form-control" readonly>
+            <span asp-validation-for="Icon"></span>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#iconPickerModal">انتخاب آیکون</button>
+
+            <!-- مودال برای نمایش آیکون‌ها -->
+            <div class="modal fade" id="iconPickerModal" tabindex="-1" aria-labelledby="iconPickerModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="iconPickerModalLabel">انتخاب آیکون</h5>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="height: 800px; overflow-y: auto;">
+                            <div id="iconList" class="row"></div>
+                            
+
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-primary" id="selectIconBtn">انتخاب</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">لغو</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="categorySlug" class="form-label">دسته بندی مادر</label>
+            <input type="text" class="form-control" id="ParentId" asp-for="ParentId">
+            <span asp-validation-for="ParentId"></span>
+        </div>
+        <div class="mb-3">
+            <label for="categoryName" class="form-label">MetaTitle</label>
+            <input type="text" class="form-control" id="SeoData.MetaTitle" asp-for="SeoData.MetaTitle">
+            <span asp-validation-for="SeoData.MetaTitle"></span>
+        </div>
+        <div class="mb-3">
+            <label for="categorySlug" class="form-label">MetaDescription</label>
+            <input type="text" class="form-control" id="SeoData.MetaDescription" asp-for="SeoData.MetaDescription">
+            <span asp-validation-for="SeoData.MetaDescription"></span>
+
+        </div>
+        <div class="mb-3">
+            <label for="categoryName" class="form-label">OgImage</label>
+            <input type="text" class="form-control" id="SeoData.OgImg" asp-for="SeoData.OgImg">
+            <span asp-validation-for="SeoData.OgImg"></span>
+
+        </div>
+        <div class="mb-3">
+            <label for="categorySlug" class="form-label">OgUrl</label>
+            <input type="text" class="form-control" id="SeoData.OgUrl" asp-for="SeoData.OgUrl">
+            <span asp-validation-for="SeoData.OgUrl"></span>
+
+        </div>
+        <button type="submit" class="btn btn-success">Save Category</button>
+    </form>
+</div>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAMMOV.CoreLayer", "GAMMOV.Application\GAMMOV.CoreLayer.csproj", "{FCC5D968-9C64-4E7A-8A7A-875DEF8D8096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAMMOV.DataLayer", "GAMMOV.Domain\GAMMOV.DataLayer.csproj", "{751546F0-FEFF-4900-A66F-AEA41274EAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAMMOV.Web", "GAMMOV.Web\GAMMOV.Web.csproj", "{7FC23D42-61AD-4FD1-8987-FB8DAD7173D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCC5D968-9C64-4E7A-8A7A-875DEF8D8096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC5D968-9C64-4E7A-8A7A-875DEF8D8096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC5D968-9C64-4E7A-8A7A-875DEF8D8096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC5D968-9C64-4E7A-8A7A-875DEF8D8096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751546F0-FEFF-4900-A66F-AEA41274EAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751546F0-FEFF-4900-A66F-AEA41274EAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751546F0-FEFF-4900-A66F-AEA41274EAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751546F0-FEFF-4900-A66F-AEA41274EAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC23D42-61AD-4FD1-8987-FB8DAD7173D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC23D42-61AD-4FD1-8987-FB8DAD7173D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC23D42-61AD-4FD1-8987-FB8DAD7173D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC23D42-61AD-4FD1-8987-FB8DAD7173D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
